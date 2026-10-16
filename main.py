@@ -1,5 +1,9 @@
+#importação da bibliotecas
 from fastapi import FastAPI
+from routes import router
 
+#configuração do FastAPI
 app = FastAPI()
 
-# Para rodar o código, executar no terminal: uvicorn main:app --reloadgit 
+#configuração das rotas
+app.include_router(router)
