@@ -1,9 +1,13 @@
-#importação da bibliotecas
 from fastapi import FastAPI
+
+from database import criar_tabelas
 from routes import router
 
-#configuração do FastAPI
-app = FastAPI()
+app = FastAPI(title="lista de Tarefas")
 
-#configuração das rotas
+criar_tabelas()
 app.include_router(router)
+
+@app.get("/")
+def raiz():
+    return {"mensagem": "Bem-vindo à API de Tarefas!"}
