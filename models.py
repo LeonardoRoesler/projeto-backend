@@ -1,7 +1,6 @@
 from typing import Optional
 from pydantic import BaseModel
-from fastapi import FastAPI, HTTPException
-from sqlmodel import SQLModel, Field, Session, create_engine, select
+from sqlmodel import SQLModel, Field
 
 
 #classes - Banco conexão

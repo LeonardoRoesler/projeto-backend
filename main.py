@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from database import criar_tabelas
 from routes import router
 
-app = FastAPI(title="lista de Tarefas")
+app = FastAPI(title="Lista de Tarefas")
 
 criar_tabelas()
 app.include_router(router)

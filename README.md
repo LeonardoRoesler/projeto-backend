@@ -1,6 +1,6 @@
 ﻿# Projeto Back-End
 
-Lista de Tarefas.
+API REST de lista de tarefas, feita com FastAPI e SQLModel, usando SQLite como banco de dados.
 
 ## Rodando localmente
 

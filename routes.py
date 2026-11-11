@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-from sqlmodel import SQLModel, Session, select
+from sqlmodel import Session, select
 
 from database import engine
 from models import Tarefa, TarefaCriar, TarefaAtualizar
