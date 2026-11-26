@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 tarefas.db
 .env
+.coverage
+.coverage.*
+htmlcov/
